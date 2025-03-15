@@ -1,12 +1,10 @@
 body {
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0; /* Fundo neutro */
-    color: #333;
+    font-family: 'Montserrat';
 }
 
 header {
-    background-color: #1a1a1a; /* Fundo mais escuro e sofisticado */
+    background-color: #9b4dca; /* Cor roxa para o cabeçalho */
 }
 
 section {
@@ -14,14 +12,14 @@ section {
 }
 
 .nav-link {
-    color: #e2aaf3; /* Um tom mais suave de roxo */
+    color: #6a2c91; /* Cor roxa para os links */
     font-weight: 600;
 }
 
 .inicio-fundo {
-    background-image: url('img/olivia_inicio.jpg'); /* Imagem temática de Olivia Rodrigo */
+    background-image: url('img/roxo_estilo.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     border-radius: 80px;
     width: 100%;
     height: 606px;
@@ -29,15 +27,16 @@ section {
     margin: 0 auto;
 }
 
-/* Atualização de cor e posicionamento */
+/* Posicionamento e tamanho das imagens */
 .img-inicio {
     position: absolute;
     right: 0;
-    top: 14rem; /* Ajuste para o novo conteúdo */
-    width: 45rem;
+    top: 18rem;
+    width: 30rem; /* Ajuste de tamanho para imagens */
     height: auto;
 }
 
+/* Alteração da imagem da esquerda */
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -46,25 +45,27 @@ section {
 }
 
 .botao-inicio {
-    background-color: #ff6f61; /* Cor vibrante, inspirada no estilo pop */
+    background-color: #6a2c91; /* Cor roxa para o botão */
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
     align-content: center;
+    color: white;
 }
 
 .display-4 {
-    text-shadow: -5px 5px #ff6f61; /* Título com sombra suave */
+    text-shadow: -5px 5px #9b4dca; /* Sombras roxas */
 }
 
 #tropicalia {
-    background: url('img/olivia_background.jpg') top center no-repeat; /* Atualização para o tema de Olivia */
-    background-size: cover;
-    background-position: center;
+    position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor\ esquera.png') bottom left no-repeat;
+    background-size: 180px 180px;
 }
 
 #tropicalia .container {
@@ -76,23 +77,23 @@ section {
 }
 
 h2 {
-    font-family: 'Lora', serif; /* Fonte mais suave e moderna */
+    font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: #ff6f61; /* Cor que remete ao estilo da Olivia */
+    color: #6a2c91; /* Roxo para os títulos */
 }
 
 #galeria {
-    background-color: #f1f1f1; /* Fundo mais suave para a galeria */
+    background-color: #f4ebf3; /* Cor de fundo suave em tons de roxo claro */
 }
 
 .fundo-galeria {
-    background: url('img/galeria_background.jpg') bottom right no-repeat;
+    background: url('img/flor\ direita.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/contato_fundo.jpg'); /* Atualize com uma imagem relevante */
+    background-image: url('img/roxo_estilo.jpg');
     background-size: cover;
     padding: 4rem 0;
 }
@@ -106,16 +107,16 @@ h2 {
 }
 
 .formulario button {
-    background-color: #ff6f61; /* Botão em tom vibrante */
+    background-color: #9b4dca; /* Cor roxa para o botão */
     border: none;
     font-weight: bold;
+    color: white;
 }
 
 .form-control {
-    background-color: #f1e0e0; /* Cor mais suave para o campo de formulário */
+    background-color: #f1edef;
 }
 
-/* Acessibilidade */
 .menu-acessibilidade {
     position: fixed;
     top: 2rem;
@@ -142,28 +143,27 @@ h2 {
     display: none;
 }
 
-/* Para alto contraste */
 .alto-contraste {
-    background-color: #111;
-    color: #f1f1f1;
+    background-color: #4a0072; /* Roxo escuro para alto contraste */
+    color: #f4ebf3;
 }
 
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario {
-    background-color: #111;
-    color: #f1f1f1;
+    background-color: #4a0072; /* Roxo escuro */
+    color: #f4ebf3;
 }
 
 .alto-contraste .nav-link {
-    color: #e2aaf3;
+    color: #ffffff; /* Link branco para alto contraste */
 }
 
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
 .alto-contraste .btn-primary {
-    background-color: #e2aaf3;
-    color: #111;
+    background-color: #9b4dca; /* Roxo para os botões */
+    color: #f4ebf3;
 }
 
 .alto-contraste #tropicalia {
@@ -171,8 +171,9 @@ h2 {
 }
 
 .alto-contraste #galeria {
-    background-color: #111;
+    background-color: #4a0072;
 }
+
 .alto-contraste .fundo-galeria {
     background: none;
 }
