@@ -1,120 +1,69 @@
-/* styles.css */
 body {
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fdf7fc;
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat';
 }
 
 header {
     background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    text-align: center;
 }
 
 .nav-link {
     color: #6a2c91;
     font-weight: 600;
-    transition: color 0.3s;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-.nav-link:hover {
-    color: #9b4dca;
 }
 
 .inicio-fundo {
     background-image: url('img/roxo_estilo.jpg');
     background-size: cover;
+    background-position: right;
     border-radius: 80px;
-    padding: 40px;
-    text-align: center;
-    color: white;
-}
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    color: #6a2c91;
-    text-align: center;
-}
-
-/* Seção de Álbuns */
-#albuns {
-    background-color: #f4ebf3;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.album-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.album {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-}
-
-.album img {
     width: 100%;
-    border-radius: 10px;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
 }
 
-/* Playlist */
-#playlist {
-    padding: 50px 0;
-    text-align: center;
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 30rem;
+    height: auto;
 }
 
-iframe {
-    border-radius: 12px;
-    width: 80%;
-    height: 300px;
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
-/* Curiosidades */
-#curiosidades {
-    background: #ffffff;
-    padding: 50px;
-    text-align: center;
-}
-
-.curiosidade-item {
-    background: #f4ebf3;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px auto;
-    width: 70%;
-    text-align: left;
-}
-
-/* Botões de acessibilidade */
-.menu-acessibilidade button {
-    background-color: #9b4dca;
-    color: white;
-    border: none;
-    font-weight: bold;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.menu-acessibilidade button:hover {
+.botao-inicio {
     background-color: #6a2c91;
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    color: white;
 }
 
-.alto-contraste {
-    background-color: #4a0072;
-    color: #f4ebf3;
+#musicas {
+    background-color: #f4ebf3;
+    padding: 3rem;
+}
+
+.botao-musica {
+    background-color: #6a2c91;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.botao-musica:hover {
+    background-color: #9b4dca;
 }

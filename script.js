@@ -1,37 +1,28 @@
-// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    const audioPlayer = document.getElementById('player-musica');
 
-// Acessibilidade: Modo Alto Contraste
-document.getElementById('modo-contraste').addEventListener('click', function () {
-    document.body.classList.toggle('alto-contraste');
-});
+    const musicas = [
+        { titulo: "Vampire", preview: "audios/vampire.mp3" },
+        { titulo: "Drivers License", preview: "audios/drivers_license.mp3" },
+        { titulo: "Good 4 U", preview: "audios/good_4_u.mp3" }
+    ];
 
-// Reproduzir prévia de músicas
-const audioPlayer = document.createElement('audio');
+    const listaMusicas = document.getElementById('lista-musicas');
 
-function tocarMusica(previewUrl) {
-    if (audioPlayer.src !== previewUrl) {
-        audioPlayer.src = previewUrl;
-        audioPlayer.play();
-    } else if (audioPlayer.paused) {
-        audioPlayer.play();
-    } else {
-        audioPlayer.pause();
-    }
-}
-
-// Lista de músicas
-const musicas = [
-    { titulo: "Vampire", preview: "link-da-musica.mp3" },
-    { titulo: "Drivers License", preview: "link-da-musica.mp3" },
-    { titulo: "Good 4 U", preview: "link-da-musica.mp3" }
-];
-
-const listaMusicas = document.getElementById('lista-musicas');
-
-musicas.forEach(musica => {
-    let item = document.createElement('button');
-    item.textContent = musica.titulo;
-    item.classList.add('botao-musica');
-    item.onclick = () => tocarMusica(musica.preview);
-    listaMusicas.appendChild(item);
+    musicas.forEach(musica => {
+        let botao = document.createElement('button');
+        botao.textContent = musica.titulo;
+        botao.classList.add('botao-musica');
+        botao.onclick = () => {
+            if (audioPlayer.src !== musica.preview) {
+                audioPlayer.src = musica.preview;
+                audioPlayer.play();
+            } else if (audioPlayer.paused) {
+                audioPlayer.play();
+            } else {
+                audioPlayer.pause();
+            }
+        };
+        listaMusicas.appendChild(botao);
+    });
 });
