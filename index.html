@@ -18,10 +18,16 @@
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#musicas">Músicas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#albuns">Álbuns</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false" aria-label="Acessibilidade">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -31,53 +37,70 @@
                 <div class="esquerda-conteudo">
                     <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
                     <img src="img/logo 1.png" class="mb-3" width="563" height="278" loading="lazy" alt="Logo Olivia Rodrigo">
-                    <a href="#musicas" class="btn btn-primary btn-lg botao-inicio fw-semibold">Ouça as músicas!</a>
+                    <a href="#Olivia Rodrigo" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
                 </div>
                 <img src="img/olivia.png" alt="Olivia Rodrigo cantando" title="Olivia Rodrigo - Imagem de divulgação" class="img-fluid img-inicio">
             </div>
         </section>
 
-        <section id="musicas" class="my-5">
-            <h2 class="text-center">Músicas de Olivia Rodrigo</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 music-box">
-                        <h4>Vampire</h4>
-                        <a href="https://www.youtube.com/watch?v=2d9whmlzvsI" target="_blank" class="btn btn-danger"><i class="bi bi-youtube"></i> YouTube</a>
-                        <a href="https://open.spotify.com/track/0M1X6tNDsm7uDcxw1OBbMX" target="_blank" class="btn btn-success"><i class="bi bi-spotify"></i> Spotify</a>
+        <section id="Olivia Rodrigo" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre Olivia Rodrigo">
+            <div class="container d-flex align-items-center">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="img/imagem.png" class="rounded-pill" width="273" height="331" loading="lazy" alt="Olivia Rodrigo em sessão de fotos">
+                </div>
+                <div class="col-5">
+                    <h2>Quem é Olivia Rodrigo?</h2>
+                    <p class="p-2">Olivia Rodrigo é uma cantora, compositora e atriz americana que ganhou destaque mundial na década de 2020. Ela alcançou seu auge com o lançamento de seu álbum de estreia, SOUR, em 2021, que trouxe uma fusão de pop, rock alternativo e elementos do punk, destacando suas habilidades líricas e sua voz emotiva. A artista é conhecida por suas letras introspectivas que exploram temas como o amor, a dor e o crescimento pessoal. Olivia Rodrigo rapidamente se tornou um ícone para a geração Z, com músicas que marcaram a cultura pop e conquistaram inúmeros prêmios. Além de sua carreira musical, ela também se destacou como atriz, especialmente pela sua atuação na série High School Musical: The Musical: The Series.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/foto1.jpg" class="img-fluid rounded-5" loading="lazy" alt="Olivia Rodrigo em performance">
                     </div>
-                    <div class="col-md-4 music-box">
-                        <h4>Drivers License</h4>
-                        <a href="https://www.youtube.com/watch?v=ZmDBbnmKpqQ" target="_blank" class="btn btn-danger"><i class="bi bi-youtube"></i> YouTube</a>
-                        <a href="https://open.spotify.com/track/7lPN2DXiMsVn7XUKtOW1CS" target="_blank" class="btn btn-success"><i class="bi bi-spotify"></i> Spotify</a>
+                    <div class="col-md-4">
+                        <img src="img/foto2.jpg" class="img-fluid rounded-5" loading="lazy" alt="Olivia Rodrigo no palco">
                     </div>
-                    <div class="col-md-4 music-box">
-                        <h4>Good 4 U</h4>
-                        <a href="https://www.youtube.com/watch?v=gNi_6U5Pm_o" target="_blank" class="btn btn-danger"><i class="bi bi-youtube"></i> YouTube</a>
-                        <a href="https://open.spotify.com/track/4ZtFanR9U6ndgddUvNcjcG" target="_blank" class="btn btn-success"><i class="bi bi-spotify"></i> Spotify</a>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/foto3.jpg" class="img-fluid rounded-5" loading="lazy" alt="Olivia Rodrigo em show ao vivo">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/foto4.jpg" class="img-fluid rounded-5" loading="lazy" alt="Olivia Rodrigo com fãs">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="albuns" class="my-5">
-            <h2 class="text-center">Álbuns</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 album-box">
-                        <img src="img/sour.jpg" class="img-fluid rounded" alt="SOUR Album">
-                        <h4>SOUR (2021)</h4>
-                        <a href="https://open.spotify.com/album/6s84u2TUpR3wdUv4NgKA2j" target="_blank" class="btn btn-primary">Ouça no Spotify</a>
-                    </div>
-                    <div class="col-md-6 album-box">
-                        <img src="img/guts.jpg" class="img-fluid rounded" alt="GUTS Album">
-                        <h4>GUTS (2023)</h4>
-                        <a href="https://open.spotify.com/album/1xJHno8v2FzYz2GrJUMlLo" target="_blank" class="btn btn-primary">Ouça no Spotify</a>
-                    </div>
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="text-center p-3 fst-italic">
@@ -88,6 +111,7 @@
         <p class="mt-3">Desenvolvido por João Braniak. Projeto fictício sem fins comerciais.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
 </body>
 
