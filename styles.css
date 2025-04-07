@@ -64,8 +64,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor\ esquera.png') bottom left no-repeat;
+    background: url('img/flord.png') top right no-repeat,
+        url('img/flore.png') bottom left no-repeat;
     background-size: 180px 180px;
 }
 
