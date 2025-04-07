@@ -159,3 +159,25 @@ h2 {
 .alto-contraste .nav-link {
     color: #ffffff; /* Link branco para alto contraste */
 }
+figure {
+    position: relative;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
